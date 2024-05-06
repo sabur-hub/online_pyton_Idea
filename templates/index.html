@@ -5,17 +5,8 @@
     <link rel="stylesheet" href="style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#execute-btn').click(function() {
-                var code = $('#code-input').val();
+    <script src="script.js"></script>
 
-                $.post('/execute', {code: code}, function(data) {
-                    $('#output').text(data.output);
-                });
-            });
-        });
-    </script>
 </head>
 <body>
     <div class="container">
